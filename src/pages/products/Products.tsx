@@ -2,7 +2,7 @@ import './products.scss'
 
 const Products = () => {
   return (
-    <div>
+    <div className='products'>
       products
     </div>
   )
