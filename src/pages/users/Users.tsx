@@ -68,31 +68,37 @@ const columns: GridColDef[] = [
     field: "firstName",
     headerName: "First name",
     flex: 1,
+    type: "string",
   },
   {
     field: "lastName",
     headerName: "Last name",
     flex: 1,
+    type: "string",
   },
   {
     field: "email",
     headerName: "Email",
     flex: 1.5,
+    type: "string",
   },
   {
     field: "phone",
     headerName: "Phone",
     flex: 1,
+    type: "string",
   },
   {
     field: "createdAt",
     headerName: "Created At",
     flex: 1,
+    type: "string",
   },
   {
     field: "verified",
     headerName: "Verified",
     flex: 0.7,
+    type: "boolean",
   },
 ];
 
@@ -103,7 +109,7 @@ const Users = () => {
     <div className='users'>
       <div className="info">
         <h1>Users</h1>
-        <button>Add New User</button>
+         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
 
       <DataTable columns={columns} rows={userRows} slug='users'/>
